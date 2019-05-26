@@ -48,6 +48,12 @@ $(document).ready(function(){
             //console.log(delNode);
             database.ref("/whatsapp").child(delNode).remove();
         });
+
+        $('.current-chat-top').each(function(){
+            var bgSrc = $(this).children('.author-img').children('img').attr('src');
+            $(this).children('.author-img').css('background-image', `url("${bgSrc}")`);
+        });
+
     });
 
     $(".send-btn").click(function(){

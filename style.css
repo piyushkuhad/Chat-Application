@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-}
+} 
 
 *, :after, :before {
     box-sizing: border-box;
@@ -45,13 +45,18 @@ body {
 }
 
 .current-chat-top .author-img {
-    width: 60px;
+    width: 47px;
     float: left;
+    height: 47px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
 
 .current-chat-top .author-img img {
     height: 50px;
     border-radius: 50%;
+    display: none;
 }
 
 .current-chat-top .author-name {
@@ -85,11 +90,11 @@ body {
     bottom: 0;
     width: 100%;
     background: #eee;
-    padding: 10px 15px 10px 80px;
+    padding: 10px 15px 10px 30px;
 }
 
 .current-chat #write-section input {
-    width: 90%;
+    width: 93%;
     font-size: 16px;
     padding: 11px 12px 11px 12px;
     border-radius: 21px;
@@ -125,6 +130,18 @@ div#display .msg-container p {
 
 .cm-chat-header {
     background: #eeee;
+    position: relative;
+}
+
+.cm-chat-header .author-img {
+    position: absolute;
+    top: 16px;
+    left: 23px;
+}
+
+.cm-chat-header .author-img img {
+    width: 40px;
+    border-radius: 50%;
 }
 
 .cm-chat-header h2 {
@@ -234,4 +251,18 @@ span.option-btn {
 
 .key {
     display: none;
+}
+
+button.send-btn img {
+    width: 32px;
+}
+
+button.send-btn {
+    border: none;
+    background: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    cursor: pointer;
+    outline: none;
 }
