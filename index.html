@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whatsapp</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="whatsapp-root row-fluid">
+            <div class="chat-list">
+                <div class="cm-chat-header">
+                    <h2>Chats</h2>
+                </div>
+                <div class="chat-container">
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/vikas.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Vikas</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/chat2.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Anuraag</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/chat3.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Sajal</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/chat4.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Jeff</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/chat5.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Norma</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/chat6.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Donna</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    <div class="chat-item row-fluid">
+                        <div class="chat-img" style="background-image: url(Images/chat7.jpeg)"></div>
+                        <div class="chat-info">
+                            <div class="chat-name">
+                                <p>Gabriel</p>
+                            </div>
+                            <div class="last-msg">
+                                <p>Okay see you</p>
+                            </div>
+                        </div>
+                        <div class="chat-border"></div>
+                    </div>
+                    
+                </div>
+            </div> 
+            <div class="current-chat">
+                <div class="current-chat-inner">
+                    <div class="current-chat-top row-fluid">
+                        <div class="author-img">
+                            <img src="Images/pp.jpg" alt="Piyush" />
+                        </div>
+                        <div class="author-name">
+                            <h2>Piyush</h2>
+                        </div>
+                    </div>
+                    <div id="display-container">
+                        <div id="display">
+
+                        </div>
+                    </div>
+                    <div id="write-section">
+                        <div>
+                            <input type="text" placeholder="Message..." id="inp">
+                            <button value="Send" class="send-btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Firebase-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+            apiKey: "AIzaSyAHD8VDAnfpRBoJR9raJlBtGevTxeeg8-8",
+            authDomain: "first-project-17d0e.firebaseapp.com",
+            databaseURL: "https://first-project-17d0e.firebaseio.com",
+            projectId: "first-project-17d0e",
+            storageBucket: "first-project-17d0e.appspot.com",
+            messagingSenderId: "563849406841",
+            appId: "1:563849406841:web:38c2ad5dfafa24b8"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
